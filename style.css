@@ -1,0 +1,25 @@
+* {
+    margin: 10px 10px;
+}
+button {
+    color: #fff;
+    background-color: violet;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: flex;
+     
+}
+
+.container {
+    display: flex;
+    padding: 100px 10px;
+    gap: 1rem;
+    background-color: bisque;
+    border-radius: 30px;
+}
+
+h1 {
+    color: slateblue;
+    text-align: center;
+    padding: 10px 10px ;
+}

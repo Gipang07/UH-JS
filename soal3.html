@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px 10px;
+            
+        }
+        .ata {
+            margin: 50px 10px;
+           
+            padding: 30px 10px ;
+            color: aliceblue;
+       
+        }
+        .container {
+            background-color: cadetblue;
+            width: max-content;
+            text-align: center;
+            padding: 40px 30px;
+            border-radius: 20px;
+        }
+        button {
+            color: #fff;
+            background-color: rgb(83, 73, 83);
+            padding: 10px 30px;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ata">
+        <div class="container">
+            <h1>Program Evaluasi Nilai</h1>
+    
+            <label for="nilai">Masukkan Nilai:</label>
+            <input type="number" id="nilai" min="0" max="100"><br>
+            <button onclick="evaluasiNilai()">Evaluasi</button>
+    
+        </div>
+    </div>
+
+    <script>
+        function evaluasiNilai() {
+            var nilai = document.getElementById("nilai").value;
+            var result;
+
+            if (nilai >= 90) {
+                result = "Nilai A";
+            } else if (nilai >= 80 && nilai <= 89) {
+                result = "Nilai B";
+            } else if (nilai >= 70 && nilai <= 79) {
+                result = "Nilai C";
+            } else if (nilai >= 60 && nilai <= 69) {
+                result = "Nilai D";
+            } else {
+                result = "Nilai E";
+            }
+
+            // Menampilkan hasil evaluasi dalam sebuah pop-up
+            alert("Hasil evaluasi: " + result);
+        }
+    </script>
+</body>
+</html>

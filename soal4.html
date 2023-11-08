@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 10px 10px;
+        }
+        .container {
+            background-color: cadetblue;
+            width: max-content;
+            text-align: center;
+            padding: 40px 30px;
+            border-radius: 20px;
+            color: #fff;
+        }
+        button {
+            color: #fff;
+            background-color: rgb(83, 73, 83);
+            padding: 10px 30px;
+            border-radius: 10px;
+          
+        }
+        .soal {
+            background-color: cadetblue;
+            width: max-content;
+            text-align: center;
+            padding: 40px 30px;
+            border-radius: 20px;
+            color: #fff;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="ati">
+        <div class="soal">
+            <h3>soal</h3>
+            <p>
+            
+Buatlah program untuk menghitung volume kubus dengan rumus sisi x sisi x sisi. Input yang dibutuhkan hanya sisi kubus
+            </p>
+        </div>
+        <div class="container">
+            <h1>Kalkulator Volume Kubus</h1>
+    
+            <label for="sisi">Masukkan Panjang Sisi Kubus:</label>
+            <input type="number" id="sisi" min="0">
+            <button onclick="hitungVolume()">Hitung</button>
+
+            <p id="hasil"></p>
+        </div>
+    </div>
+    
+
+    <script>
+        function hitungVolume() {
+            var sisi = document.getElementById("sisi").value;
+            var volume = sisi * sisi * sisi;
+            var hasil = "Volume kubus dengan sisi " + sisi + " adalah " + volume;
+            document.getElementById("hasil").textContent = hasil;
+        }
+    </script>
+</body>
+</html>
